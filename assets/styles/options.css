@@ -21,7 +21,6 @@ button {
 body {
   width: 412px;
   background-color: #F5F5F5;
-  height: 100vh;
   margin: 0 auto;
 }
 
@@ -360,7 +359,7 @@ section#content div.container {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 88vh;
+  height: 92vh;
 }
 section#content div.container div.top h1 {
   font-size: 24px;
