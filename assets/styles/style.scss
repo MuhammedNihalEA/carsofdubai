@@ -667,7 +667,7 @@ section#cars2{
     width: 1280px;
     margin: 0 auto;
     margin-top: 200px;
-    img.line small{
+    img.line-small{
         display: none;
     }
     div{
@@ -889,7 +889,8 @@ section#luxury-car-collection{
 section#cars3{
     width: 1280px;
     margin: 0 auto;
-    img{
+    img.line-small{
+        display: none;
 
     }
     div{
@@ -1119,7 +1120,7 @@ section#questions{
                 justify-content: space-between;
                 align-items: flex-start;
                 flex-direction: column;
-                li.active{
+                li{
                     border-bottom: 1px solid #acaeb8;
                     div{
                         display: flex;
@@ -1131,14 +1132,28 @@ section#questions{
                             font-weight: 400;
                         }
                         img{
-                            transform: rotate(45deg);
+                            &:hover{
+                                transform: rotate(45deg);
+                            }
+                        }
+                        &:hover{
+                            + p{
+                                display: block;
+                                opacity: 1;
+                                transition: opacity 0.5s ease-in-out;
+                            }
+                            img{
+                                transform: rotate(45deg);
+                            }
                         }
                     }
                     p{
+                        display: none;
                         font-size: 16px;
                         margin-top: 20px;
+                        opacity: 0;
+                        transition: opacity 0.5s ease-in-out;
                     }
-                    
                 }
                 li{
                     border-bottom: 1px solid #acaeb8;
@@ -1157,6 +1172,7 @@ section#questions{
                                 transform: rotate(45deg);
                             }
                         }
+                        
                     }
                     img{
                         margin-left: 0;
@@ -1188,12 +1204,23 @@ section#questions{
                                 transform: rotate(45deg);
                             }
                         }
+                        &:hover{
+                            + p{
+                                display: block;
+                            }
+                            img{
+                                transform: rotate(45deg);
+                            }
+                        } 
                     }
-                    img{
-                        margin-left: 0;
+                    p{
+                        display: none;
+                        font-size: 16px;
+                        margin-top: 20px;
                     }
                 }
             }
+            
         }
     }
 }
@@ -1807,6 +1834,14 @@ section#contact{
     section#cars1{
         width: 944px;
         margin: 0 auto;
+        img.line{
+            display: none;
+        }
+        img.line-small{
+            display: block;
+            width: 944px;
+            height: 100px;
+        }
         
         div{
             
@@ -1844,8 +1879,13 @@ section#contact{
         width: 944px;
         margin: 0 auto;
         margin-top: 100px;
-        img.line-small{
+        img.line{
             display: none;
+        }
+        img.line-small{
+            display: block;
+            width: 944px;
+            height: 100px;
         }
         div{
             
@@ -1912,8 +1952,13 @@ section#contact{
         width: 944px;
         margin: 0 auto;
         margin-top: 100px;
-        img.line-small{
+        img.line{
             display: none;
+        }
+        img.line-small{
+            display: block;
+            width: 944px;
+            height: 100px;
         }
         div{
             
@@ -2002,7 +2047,7 @@ section#contact{
         }
         img.plus{
             position: absolute;
-            left: 44%;
+            left: 50%;
         }
         div.container{
             width: 944px;

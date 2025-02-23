@@ -631,7 +631,7 @@ section#cars2 {
   margin: 0 auto;
   margin-top: 200px;
 }
-section#cars2 img.line small {
+section#cars2 img.line-small {
   display: none;
 }
 section#cars2 div {
@@ -841,6 +841,9 @@ section#luxury-car-collection div.arrow button img {
 section#cars3 {
   width: 1280px;
   margin: 0 auto;
+}
+section#cars3 img.line-small {
+  display: none;
 }
 section#cars3 div {
   display: flex;
@@ -1062,25 +1065,36 @@ section#questions div.container div.left ul {
   align-items: flex-start;
   flex-direction: column;
 }
-section#questions div.container div.left ul li.active {
+section#questions div.container div.left ul li {
   border-bottom: 1px solid #acaeb8;
 }
-section#questions div.container div.left ul li.active div {
+section#questions div.container div.left ul li div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-section#questions div.container div.left ul li.active div h3 {
+section#questions div.container div.left ul li div h3 {
   font-size: 20px;
   color: #1b1b1b;
   font-weight: 400;
 }
-section#questions div.container div.left ul li.active div img {
+section#questions div.container div.left ul li div img:hover {
   transform: rotate(45deg);
 }
-section#questions div.container div.left ul li.active p {
+section#questions div.container div.left ul li div:hover + p {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+section#questions div.container div.left ul li div:hover img {
+  transform: rotate(45deg);
+}
+section#questions div.container div.left ul li p {
+  display: none;
   font-size: 16px;
   margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 section#questions div.container div.left ul li {
   border-bottom: 1px solid #acaeb8;
@@ -1132,8 +1146,16 @@ section#questions div.container div.right ul li div img {
 section#questions div.container div.right ul li div img:hover {
   transform: rotate(45deg);
 }
-section#questions div.container div.right ul li img {
-  margin-left: 0;
+section#questions div.container div.right ul li div:hover + p {
+  display: block;
+}
+section#questions div.container div.right ul li div:hover img {
+  transform: rotate(45deg);
+}
+section#questions div.container div.right ul li p {
+  display: none;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
 section#contact {
@@ -1710,6 +1732,14 @@ section#contact div.contact-container div.bottom footer div ul li a {
     width: 944px;
     margin: 0 auto;
   }
+  section#cars1 img.line {
+    display: none;
+  }
+  section#cars1 img.line-small {
+    display: block;
+    width: 944px;
+    height: 100px;
+  }
   section#cars1 div.cars ul {
     width: 944px;
   }
@@ -1727,8 +1757,13 @@ section#contact div.contact-container div.bottom footer div ul li a {
     margin: 0 auto;
     margin-top: 100px;
   }
-  section#cars2 img.line-small {
+  section#cars2 img.line {
     display: none;
+  }
+  section#cars2 img.line-small {
+    display: block;
+    width: 944px;
+    height: 100px;
   }
   section#cars2 div.cars ul {
     width: 944px;
@@ -1772,8 +1807,13 @@ section#contact div.contact-container div.bottom footer div ul li a {
     margin: 0 auto;
     margin-top: 100px;
   }
-  section#cars3 img.line-small {
+  section#cars3 img.line {
     display: none;
+  }
+  section#cars3 img.line-small {
+    display: block;
+    width: 944px;
+    height: 100px;
   }
   section#cars3 div.cars ul {
     width: 944px;
@@ -1836,7 +1876,7 @@ section#contact div.contact-container div.bottom footer div ul li a {
   }
   section#questions img.plus {
     position: absolute;
-    left: 44%;
+    left: 50%;
   }
   section#questions div.container {
     width: 944px;

@@ -261,6 +261,9 @@ section#cars3 {
   width: 1280px;
   margin: 0 auto;
 }
+section#cars3 img.line-small {
+  display: none;
+}
 section#cars3 div {
   display: flex;
   align-items: center;
@@ -736,8 +739,12 @@ section#contact div.contact-container div.bottom footer div ul li a {
     margin-top: 100px;
   }
   section#cars3 img.line-small {
+    display: block;
     width: 944px;
     height: 108px;
+  }
+  section#cars3 img.line {
+    display: none;
   }
   section#cars3 div.cars ul {
     width: 944px;

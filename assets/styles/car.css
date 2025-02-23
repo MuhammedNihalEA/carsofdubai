@@ -392,24 +392,36 @@ section#faq div.faq-container div.left div.faqs ul {
   align-items: flex-start;
   flex-direction: column;
 }
-section#faq div.faq-container div.left div.faqs ul li.active div {
+section#faq div.faq-container div.left div.faqs ul li {
+  width: 100%;
+}
+section#faq div.faq-container div.left div.faqs ul li div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-section#faq div.faq-container div.left div.faqs ul li.active div h3 {
+section#faq div.faq-container div.left div.faqs ul li div h3 {
   font-size: 20px;
   color: #1b1b1b;
+  font-weight: 400;
 }
-section#faq div.faq-container div.left div.faqs ul li.active div img {
+section#faq div.faq-container div.left div.faqs ul li div img:hover {
   transform: rotate(45deg);
 }
-section#faq div.faq-container div.left div.faqs ul li.active p {
-  font-size: 16px;
+section#faq div.faq-container div.left div.faqs ul li div:hover + p {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
-section#faq div.faq-container div.left div.faqs ul li.active img {
-  margin-left: 0;
+section#faq div.faq-container div.left div.faqs ul li div:hover img {
+  transform: rotate(45deg);
+}
+section#faq div.faq-container div.left div.faqs ul li p {
+  display: none;
+  font-size: 16px;
   margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 section#faq div.faq-container div.left div.faqs ul li div {
   display: flex;

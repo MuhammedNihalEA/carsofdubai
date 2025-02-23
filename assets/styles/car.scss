@@ -421,7 +421,8 @@ section#faq{
                     justify-content: space-between;
                     align-items: flex-start;
                     flex-direction: column;
-                    li.active{
+                    li{
+                        width: 100%;
                         div{
                             display: flex;
                             justify-content: space-between;
@@ -429,17 +430,30 @@ section#faq{
                             h3{
                                 font-size: 20px;
                                 color: #1b1b1b;
+                                font-weight: 400;
                             }
                             img{
-                                transform: rotate(45deg);
+                                &:hover{
+                                    transform: rotate(45deg);
+                                }
+                            }
+                            &:hover{
+                                + p{
+                                    display: block;
+                                    opacity: 1;
+                                    transition: opacity 0.5s ease-in-out;
+                                }
+                                img{
+                                    transform: rotate(45deg);
+                                }
                             }
                         }
                         p{
+                            display: none;
                             font-size: 16px;
-                        }
-                        img{
-                            margin-left: 0;
                             margin-top: 20px;
+                            opacity: 0;
+                            transition: opacity 0.5s ease-in-out;
                         }
                     }
                     li{

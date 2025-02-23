@@ -282,7 +282,8 @@ section#selection{
 section#cars3{
     width: 1280px;
     margin: 0 auto;
-    img{
+    img.line-small{
+        display: none;
 
     }
     div{
@@ -791,8 +792,12 @@ section#contact{
         margin: 0 auto;
         margin-top: 100px;
         img.line-small{
+            display: block;
             width: 944px;
             height: 108px;
+        }
+        img.line{
+            display: none;
         }
         div{
             
