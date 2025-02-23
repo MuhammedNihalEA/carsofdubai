@@ -866,7 +866,7 @@ section#contact div.contact-container div.bottom footer div ul li a {
     font-weight: 300;
   }
   section#blog {
-    width: 370px;
+    width: 360px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 32px;
@@ -916,10 +916,8 @@ section#contact div.contact-container div.bottom footer div ul li a {
   section#blog div.bottom ul li div p {
     font-size: 16px;
     margin-bottom: 20px;
-  }
-  section#blog div.bottom ul li div img {
-    margin-bottom: 20px;
-    width: 177px;
+    border-bottom: 1px solid #acaeb8;
+    padding-bottom: 20px;
   }
   section#blog div.bottom ul li div span {
     display: flex;

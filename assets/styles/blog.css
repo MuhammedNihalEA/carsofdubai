@@ -930,7 +930,7 @@ section#contact div.contact-container div.bottom footer div ul li a {
     cursor: pointer;
   }
   section#navigator {
-    width: 100%;
+    width: 370px;
     margin-left: 20px;
     padding-bottom: 20px;
   }
@@ -991,10 +991,8 @@ section#contact div.contact-container div.bottom footer div ul li a {
   section#blogs div.bottom ul li div p {
     font-size: 16px;
     margin-bottom: 20px;
-  }
-  section#blogs div.bottom ul li div img {
-    margin-bottom: 20px;
-    width: 177px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #acaeb8;
   }
   section#blogs div.bottom ul li div span {
     display: flex;
