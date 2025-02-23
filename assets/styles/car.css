@@ -1546,7 +1546,7 @@ section#contact div.contact-container div.bottom footer div ul li a {
     left: 180px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 412px) {
   section#selection {
     width: 370px;
     margin: 0 auto;
@@ -1595,7 +1595,7 @@ section#contact div.contact-container div.bottom footer div ul li a {
     margin-right: 10px;
   }
   body {
-    width: 430px;
+    width: 412px;
     margin: 0 auto;
   }
   section#menu {
@@ -2222,8 +2222,9 @@ section#contact div.contact-container div.bottom footer div ul li a {
     border: none;
   }
   section#cars1 {
-    width: 412px;
+    width: 382px;
     margin: 0 auto;
+    margin-right: 0;
   }
   section#cars1 img.line {
     display: none;
@@ -2272,8 +2273,9 @@ section#contact div.contact-container div.bottom footer div ul li a {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 370px;
+    width: 360px;
     padding: 10px;
+    padding-right: 0;
   }
   section#cars1 div.cars ul li a div.phone img {
     width: 30%;

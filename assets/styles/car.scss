@@ -1666,7 +1666,7 @@ section#contact{
 }
 
 
-@media (max-width: 430px) {
+@media (max-width: 412px) {
 
     section#selection{
         width: 370px;
@@ -1726,7 +1726,7 @@ section#contact{
     }
     
     body{
-        width: 430px;
+        width: 412px;
         margin: 0 auto;
     }
     
@@ -2385,8 +2385,9 @@ section#contact{
     }
 
     section#cars1{
-        width: 412px;
+        width: 382px;
         margin: 0 auto;
+        margin-right: 0;
         img.line{
             display: none;
         }
@@ -2433,8 +2434,9 @@ section#contact{
                             display: flex;
                             flex-direction: row;
                             justify-content: flex-start;
-                            width: 370px;
+                            width: 360px;
                             padding: 10px;
+                            padding-right: 0;
                             img{
                                 width: 30%;
                                 border-radius: 8px;
